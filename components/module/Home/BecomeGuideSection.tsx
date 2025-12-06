@@ -3,7 +3,6 @@
 import { Button } from "@/components/ui/button";
 import { DollarSign, Clock, Users, Award } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
 
 const benefits = [
   {
@@ -34,13 +33,12 @@ const BecomeGuideSection = () => {
       {/* Background */}
       <div className="absolute inset-0">
         <Image
+          fill
           src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=1920"
           alt="Become a guide"
-          fill
-          priority
-          className="object-cover"
+          className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-secondary/95 to-primary/90" />
+        <div className="absolute inset-0 bg-linear-to-r from-[#2F8179]/95 to-[#CE6F5B]/90" />
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
@@ -77,11 +75,11 @@ const BecomeGuideSection = () => {
               ))}
             </div>
 
-            <Link href="/register?role=guide">
+            <a href="/register?role=guide">
               <Button variant="accent" size="xl">
                 Start Your Journey
               </Button>
-            </Link>
+            </a>
           </div>
 
           {/* Stats */}

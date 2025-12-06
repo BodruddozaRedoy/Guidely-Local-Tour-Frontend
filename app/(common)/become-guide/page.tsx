@@ -265,7 +265,7 @@ const BecomeGuide = () => {
                                 </div>
 
                                 <p className="text-muted-foreground mb-6">
-                                    "{testimonial.quote}"
+                                    {testimonial.quote}
                                 </p>
 
                                 <div className="flex items-center justify-between pt-6 border-t border-border">
